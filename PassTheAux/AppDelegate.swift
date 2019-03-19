@@ -2,9 +2,9 @@
 //  AppDelegate.swift
 //  PassTheAux
 //
-// TBA
 
 import UIKit
+import AVFoundation
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -14,6 +14,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        let audioSession = AVAudioSession.sharedInstance()
+        
+        do {
+            // TODO: Check if this works
+            try audioSession.setCategory(.playAndRecord, mode: .default, options: [])
+        } catch {
+            print("Setting category failed.")
+        }
+        
         return true
     }
 

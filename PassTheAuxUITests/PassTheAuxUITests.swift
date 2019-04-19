@@ -2,7 +2,6 @@
 //  PassTheAuxUITests.swift
 //  PassTheAuxUITests
 //
-//  Created by Carole Zeleny on 4/19/19.
 //  Copyright © 2019 Nate Zeleny. All rights reserved.
 //
 

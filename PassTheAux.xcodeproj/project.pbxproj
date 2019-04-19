@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C259C73226A687200A688C6 /* PassTheAuxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C259C72226A687200A688C6 /* PassTheAuxUITests.swift */; };
 		2C4450BF2240939E002C40CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4450BE2240939E002C40CE /* AppDelegate.swift */; };
 		2C4450C12240939E002C40CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4450C02240939E002C40CE /* ViewController.swift */; };
 		2C4450C42240939E002C40CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C4450C22240939E002C40CE /* Main.storyboard */; };
@@ -16,6 +17,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		2C259C75226A687200A688C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C4450B32240939E002C40CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C4450BA2240939E002C40CE;
+			remoteInfo = PassTheAux;
+		};
 		2C4450D02240939F002C40CE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2C4450B32240939E002C40CE /* Project object */;
@@ -26,6 +34,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2C259C70226A687200A688C6 /* PassTheAuxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PassTheAuxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C259C72226A687200A688C6 /* PassTheAuxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassTheAuxUITests.swift; sourceTree = "<group>"; };
+		2C259C74226A687200A688C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C4450BB2240939E002C40CE /* PassTheAux.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PassTheAux.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C4450BE2240939E002C40CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C4450C02240939E002C40CE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -39,6 +50,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2C259C6D226A687200A688C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2C4450B82240939E002C40CE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -56,11 +74,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C259C71226A687200A688C6 /* PassTheAuxUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2C259C72226A687200A688C6 /* PassTheAuxUITests.swift */,
+				2C259C74226A687200A688C6 /* Info.plist */,
+			);
+			path = PassTheAuxUITests;
+			sourceTree = "<group>";
+		};
 		2C4450B22240939E002C40CE = {
 			isa = PBXGroup;
 			children = (
 				2C4450BD2240939E002C40CE /* PassTheAux */,
 				2C4450D22240939F002C40CE /* PassTheAuxTests */,
+				2C259C71226A687200A688C6 /* PassTheAuxUITests */,
 				2C4450BC2240939E002C40CE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,6 +98,7 @@
 			children = (
 				2C4450BB2240939E002C40CE /* PassTheAux.app */,
 				2C4450CF2240939F002C40CE /* PassTheAuxTests.xctest */,
+				2C259C70226A687200A688C6 /* PassTheAuxUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,6 +128,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		2C259C6F226A687200A688C6 /* PassTheAuxUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C259C79226A687200A688C6 /* Build configuration list for PBXNativeTarget "PassTheAuxUITests" */;
+			buildPhases = (
+				2C259C6C226A687200A688C6 /* Sources */,
+				2C259C6D226A687200A688C6 /* Frameworks */,
+				2C259C6E226A687200A688C6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2C259C76226A687200A688C6 /* PBXTargetDependency */,
+			);
+			name = PassTheAuxUITests;
+			productName = PassTheAuxUITests;
+			productReference = 2C259C70226A687200A688C6 /* PassTheAuxUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		2C4450BA2240939E002C40CE /* PassTheAux */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2C4450D82240939F002C40CE /* Build configuration list for PBXNativeTarget "PassTheAux" */;
@@ -144,6 +191,10 @@
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Nate Zeleny";
 				TargetAttributes = {
+					2C259C6F226A687200A688C6 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 2C4450BA2240939E002C40CE;
+					};
 					2C4450BA2240939E002C40CE = {
 						CreatedOnToolsVersion = 10.1;
 					};
@@ -168,11 +219,19 @@
 			targets = (
 				2C4450BA2240939E002C40CE /* PassTheAux */,
 				2C4450CE2240939F002C40CE /* PassTheAuxTests */,
+				2C259C6F226A687200A688C6 /* PassTheAuxUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		2C259C6E226A687200A688C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2C4450B92240939E002C40CE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -193,6 +252,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2C259C6C226A687200A688C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C259C73226A687200A688C6 /* PassTheAuxUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2C4450B72240939E002C40CE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -213,6 +280,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		2C259C76226A687200A688C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2C4450BA2240939E002C40CE /* PassTheAux */;
+			targetProxy = 2C259C75226A687200A688C6 /* PBXContainerItemProxy */;
+		};
 		2C4450D12240939F002C40CE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 2C4450BA2240939E002C40CE /* PassTheAux */;
@@ -240,6 +312,42 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		2C259C77226A687200A688C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PassTheAuxUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cs386.pta.PassTheAuxUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PassTheAux;
+			};
+			name = Debug;
+		};
+		2C259C78226A687200A688C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PassTheAuxUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cs386.pta.PassTheAuxUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PassTheAux;
+			};
+			name = Release;
+		};
 		2C4450D62240939F002C40CE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -435,6 +543,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2C259C79226A687200A688C6 /* Build configuration list for PBXNativeTarget "PassTheAuxUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C259C77226A687200A688C6 /* Debug */,
+				2C259C78226A687200A688C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2C4450B62240939E002C40CE /* Build configuration list for PBXProject "PassTheAux" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

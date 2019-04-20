@@ -2,7 +2,6 @@
 //  PassTheAuxTests.swift
 //  PassTheAuxTests
 //
-//  Created by Carole Zeleny on 3/18/19.
 //  Copyright © 2019 Nate Zeleny. All rights reserved.
 //
 

@@ -40,6 +40,13 @@ class PassTheAuxUITests: XCTestCase {
                         
     }
     
+    /*
+     Acceptence test for making sure the create session route
+     stays functional and does not break. Clicks the
+     "Create Session" button, the continue button after seeing
+     the session created code, and then makes sure we are at
+     the main page by checking if the "Queue Song" button exists.
+     */
     func testCreateSessionButton() {
         
         let app = XCUIApplication()
@@ -49,7 +56,13 @@ class PassTheAuxUITests: XCTestCase {
         
         XCTAssert(app.buttons["Queue Song"].exists)
     }
-    
+    /*
+     Acceptence test for making sure the copy to clipboard
+     button does not break by clicking the button and copying
+     the test string, then checking the clipboard to see if
+     the string currently in the clipboard is the same as the
+     test string.
+     */
     func testeCopyCodeButton() {
         let sessionCode = "<CREATED CODE HERE>"
         let app = XCUIApplication()

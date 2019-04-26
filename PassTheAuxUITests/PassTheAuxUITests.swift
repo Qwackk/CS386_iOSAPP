@@ -58,7 +58,7 @@ class PassTheAuxUITests: XCTestCase {
     }
     /*
      Acceptence test for making sure the copy to clipboard
-     button does not break by clicking the button and copying
+     button doesn't break by clicking the button and copying
      the test string, then checking the clipboard to see if
      the string currently in the clipboard is the same as the
      test string.

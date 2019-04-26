@@ -27,6 +27,9 @@ class PassTheAuxUITests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
+    /*
+     Acceptence test to ensure that the join session button stays operational.
+     */
     func testJoinSessionButton() {
         // Use recording to get started writing UI tests.
                 // Use XCTAssert and related functions to verify your tests produce the correct results.
@@ -56,20 +59,6 @@ class PassTheAuxUITests: XCTestCase {
         
         XCTAssert(app.buttons["Queue Song"].exists)
     }
-    /*
-     Acceptence test for making sure the copy to clipboard
-     button doesn't break by clicking the button and copying
-     the test string, then checking the clipboard to see if
-     the string currently in the clipboard is the same as the
-     test string.
-     */
-    func testeCopyCodeButton() {
-        let sessionCode = "<CREATED CODE HERE>"
-        let app = XCUIApplication()
-        app.buttons["Create Session"].tap()
-        app.buttons["Copy code to clipboard"].tap()
-        let clipBoard = UIPasteboard.general.string
-        XCTAssert(clipBoard == sessionCode)
-    }
+    
 
 }
